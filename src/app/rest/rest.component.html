@@ -1,0 +1,73 @@
+<div class="container">
+
+    <div class="row justify-content-end mt-5">
+        <div class="col-4">
+            <input type="button" class="btn btn-primary mr-5" value="Nuevo Cliente" (click)="Nuevo_Cliente()">
+            <input type="button" class="btn btn-secondary" value="Modificar cliente" (click)="Modificar_Cliente()">
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>
+                            Cliente_ID
+                        </th>
+                        <th>
+                            Nombre_Usuario
+                        </th>
+
+                        <th>
+                            Nombre
+                        </th>
+                        <th>
+                            Apellidos
+                        </th>
+                        <th>
+                            Correo_Electronico
+                        </th>
+                        <th>
+                            Edad
+                        </th>
+                        <th>
+                            Estatura
+                        </th>
+                        <th>
+                            Peso
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let cliente of clientes;">
+                        <td>
+                            {{cliente.Cliente_ID}}
+                        </td>
+                        <td>
+                            {{cliente.Nombre_Usuario}}
+                        </td>
+                        <td>
+                            {{cliente.Nombre}}
+                        </td>
+                        <td>
+                            {{cliente.Apellidos}}
+                        </td>
+                        <td>
+                            {{cliente.Correo_Electronico}}
+                        </td>
+                        <td>
+                            {{cliente.Edad}}
+                        </td>
+                        <td>
+                            {{cliente.Estatura}}
+                        </td>
+                        <td>
+                            {{cliente.Peso}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
